@@ -12,7 +12,8 @@ function App() {
       const url = `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=8e04f17d896248ee8d97596441cfcbe9`
       const respuesta = await fetch(url);
       const noticias = await respuesta.json();
-      console.log(noticias);
+      console.log(categoria);
+      console.log(noticias.articles);
     
     };
     consultarAPI();
